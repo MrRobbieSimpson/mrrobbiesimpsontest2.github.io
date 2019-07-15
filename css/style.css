@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400&display=swap');
+
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 100%; }
+
+  h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+  }
+
+  .showcase {
+  width: 300px;
+  height: 220px;
+  margin: 15px;
+  padding-top: 10px;
+  padding: 4px;
+  border-radius: 10px;
+  float: left;
+}
+
+.info {
+  width: 320px;
+  height: 220px;
+  z-index: 2;
+  background: #141414;
+  border-radius: 3px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: 0.20s;
+}
+.info:hover {
+  opacity: 0.4;
+}
+
+.line {
+    border-bottom: 1px solid #141414;
+    opacity: 0.10;
+}
+
+#img_contain {
+
+  text-align: center;
+  width: 1024px;
+  height: 270px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding: 40px;
+
+}
+
+.content {
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 60px;
+
+}
+
+dl {
+  font-size: 18px;
+}
+
+dt {
+  float: left;
+  clear: left;
+  width: 250px;
+  font-weight: 300;
+  font-family: 'Fira Sans';
+}
+
+dd {
+  margin: 0 0 0 250px;
+  padding: 0 0 0.5em 0;
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+
+  p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 38px;
+    line-height: 1.4;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 20px;
+    padding-top: 100px;
+  }
+
+
+  .navigation {
+    height: 70px;
+    background-color: #eeeeee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+  }
+
+  .name {
+    float: left;
+    line-height: 70px;
+    font-size: 1.2em;
+
+   }
+
+  .name a {
+    color: #141414;
+    text-decoration: none;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: alias;
+
+  }
+
+  a:hover {
+    text-decoration: underline;
+      -webkit-transition: 0.20s;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #141414;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 70px;
+  }
+
+  nav ul li a:hover {
+
+            color: #141414;
+            font-weight: bold;
+            transition: .4s;
+  }
+
+  nav ul li a:not(:only-child):after {
+            padding-left: 4px;
+            content: '  ▾'; }
+
+  nav ul li ul li {
+    min-width: 160px;
+    }
+
+  nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+
+
+  }
+
+
+
+  /* Mobile Hamburger Menu */
+
+  .nav-mobile {
+    display: none;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #262626;
+  }
+
+  /* Media Query for Navigation */
+
+  @media only screen and (max-width: 800px) {
+
+    .nav-mobile {
+      display: block;
+    }
+
+    nav {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    nav ul li {
+      float: none;
+    }
+
+     nav ul li a {
+            padding: 15px;
+            line-height: 20px;
+    }
+
+    nav ul li ul li a {
+            padding-left: 40px;
+            background-color: gray;
+    }
+
+
+  }
+
+  @media screen and (min-width: 800px) {
+    .nav-list {
+      display: block !important; } }
+  #nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0; }
+    #nav-toggle span,
+    #nav-toggle span:before,
+    #nav-toggle span:after {
+      cursor: pointer;
+      border-radius: 1px;
+      height: 4px;
+      width: 30px;
+      background: pink;
+      position: absolute;
+      display: block;
+      content: '';
+      transition: all 300ms ease-in-out; }
+    #nav-toggle span:before {
+      top: -10px; }
+    #nav-toggle span:after {
+      bottom: -10px; }
+    #nav-toggle.active span {
+      background-color: transparent; }
+      #nav-toggle.active span:before, #nav-toggle.active span:after {
+        top: 0; }
+      #nav-toggle.active span:before {
+        transform: rotate(45deg); }
+      #nav-toggle.active span:after {
+        transform: rotate(-45deg); }
