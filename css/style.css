@@ -134,7 +134,7 @@ dd {
   }
 
   a:hover {
-    text-decoration: underline;
+
       -webkit-transition: 0.20s;
   }
 
@@ -167,6 +167,26 @@ dd {
             font-weight: bold;
             transition: .4s;
   }
+
+  nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+
+  nav ul li a:hover:before {
+ visibility: visible;
+ -webkit-transform: scaleX(1);
+ transform: scaleX(1); }
 
   nav ul li a:not(:only-child):after {
             padding-left: 4px;
