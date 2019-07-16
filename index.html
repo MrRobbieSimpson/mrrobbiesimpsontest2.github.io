@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
 <link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <title>Rob Simpson | Designer</title>
 </head>
@@ -15,8 +16,8 @@
 <body class="fadeIn">
   <section class="navigation">
     <div class="nav-container">
-
-      <div class="name"><img src="https://pbs.twimg.com/profile_images/1109225657861591041/UAzA8P7G_400x400.jpg" height="24px" width="24px" style="border-radius: 60%;"><a href="www.twitter.com/MrRobSimpson" target="_blank">Rob Simpson<a/></div>
+<!--<img src="https://pbs.twimg.com/profile_images/1109225657861591041/UAzA8P7G_400x400.jpg" height="24px" width="24px" style="border-radius: 60%;">-->
+      <div class="name"><a href="www.twitter.com/MrRobSimpson" target="_blank">Rob Simpson<a/></div>
       <nav>
         <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
         <ul class="nav-list">
@@ -59,7 +60,7 @@
   </div>
 </div>
 
-<div class="content">
+<div class="content" data -aos="fade-up">
   <div class="section">
     <h3 class="title">Dawson Andrews</h3>
     <div class="item">
@@ -93,8 +94,9 @@
     </div>
   </div>
 
+<div class="line"></div>
 
-
+<!--<a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/MrRobSimpson?ref_src=twsrc%5Etfw">Tweets by MrRobSimpson</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 
   </body>
 
@@ -107,6 +109,11 @@ $("#nav-toggle").click(function() {
       $("nav ul").toggle();
     });
 
+     </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+
+AOS.init();
      </script>
 
 </html>
