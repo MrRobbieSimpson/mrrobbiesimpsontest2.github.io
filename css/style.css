@@ -113,7 +113,7 @@ dd {
     float: left;
     line-height: 70px;
     font-size: 1.2em;
-    
+
 
    }
 
@@ -191,7 +191,7 @@ dd {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #262626;
+    background-color: #eeeeee;
   }
 
   /* Media Query for Navigation */
@@ -244,7 +244,7 @@ dd {
       border-radius: 1px;
       height: 4px;
       width: 30px;
-      background: pink;
+      background: #141414;
       position: absolute;
       display: block;
       content: '';
